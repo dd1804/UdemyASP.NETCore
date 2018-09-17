@@ -19,7 +19,7 @@ export class MemberListComponent implements OnInit {
 
   constructor(
     private userService: UserService,
-    private alertityService: AlertityService,
+    private alertifyService: AlertityService,
     private route: ActivatedRoute
   ) {}
 
@@ -56,7 +56,7 @@ export class MemberListComponent implements OnInit {
           this.pagination = res.pagination;
         },
         error => {
-          this.alertityService.error(error);
+          this.alertifyService.error(error);
         }
       );
   }
